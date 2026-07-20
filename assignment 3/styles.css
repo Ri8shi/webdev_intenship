@@ -1,11 +1,6 @@
-/* ============================================
-   INTERNSHIP LISTINGS — DARK GLASSMORPHISM
-   Pure HTML/CSS · No JavaScript
-   ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-/* ---------- Design Tokens ---------- */
 :root {
   --bg-body: #0a0a1a;
   --bg-body-alt: #0e0e24;
