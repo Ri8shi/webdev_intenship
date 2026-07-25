@@ -1,0 +1,3 @@
+For Assignment 1, the objective is to make a portfolio file
+link for portfolio reposetory - https://github.com/Ri8shi/portfolio_rishi
+live link - https://ri8shi.github.io/portfolio_rishi/
