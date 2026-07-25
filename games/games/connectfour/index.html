@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four | ArcadeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="logo-text" style="text-decoration: none; color: inherit;">Arcade<span class="highlight">X</span></a>
+        </div>
+        <nav><a href="../../index.html" class="back-btn">← Back</a></nav>
+    </header>
+
+    <main class="game-container">
+        <div class="game-header">
+            <h1 class="c4-title">Connect Four</h1>
+            <div class="mode-selector" style="margin-bottom: 1.5rem; display:flex; justify-content:center; gap:1rem;">
+                <button id="mode-pvp" class="action-btn" style="padding:0.4rem 1rem; font-size:1rem; border-radius:12px; box-shadow:none; background:linear-gradient(135deg, #ef4444, #b91c1c);">2 Player</button>
+                <button id="mode-pvc" class="action-btn" style="padding:0.4rem 1rem; font-size:1rem; border-radius:12px; box-shadow:none; filter: grayscale(100%); opacity:0.6;">vs CPU</button>
+            </div>
+            <div id="status" class="status">Red's Turn</div>
+        </div>
+        <div class="game-board-container">
+            <div id="board" class="board"></div>
+            <button id="restart-btn" class="action-btn" style="margin-top: 2rem;">Restart</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

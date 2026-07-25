@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 | ArcadeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="logo-text" style="text-decoration: none; color: inherit;">Arcade<span class="highlight">X</span></a>
+        </div>
+        <nav><a href="../../index.html" class="back-btn">← Back</a></nav>
+    </header>
+
+    <main class="game-container">
+        <div class="game-header">
+            <h1 class="title-2048">2048</h1>
+            <div class="scores"><div class="score-box">Score: <span id="score">0</span></div></div>
+        </div>
+        <div class="game-board-container">
+            <div class="grid" id="grid"></div>
+            <div id="game-over-screen" class="overlay hidden">
+                <h2 class="game-over-text">Game Over</h2>
+                <button id="restart-btn" class="action-btn">Try Again</button>
+            </div>
+        </div>
+        <p style="margin-top:2rem;color:#ccc;">Use Arrow Keys or WASD to join the numbers.</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

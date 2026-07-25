@@ -1,0 +1,83 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--card-border);
+    transition: var(--transition-snappy);
+}
+.back-btn:hover { background: rgba(255,255,255,0.2); }
+
+.game-header { text-align: center; margin-bottom: 2rem; }
+
+.tictactoe-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #f43f5e, #fb7185);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.status {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.game-board-container {
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: var(--glass-blur);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: var(--font-display);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cell:hover { background: rgba(255,255,255,0.1); }
+.cell.x { color: #f43f5e; text-shadow: 0 0 10px rgba(244,63,94,0.4); }
+.cell.o { color: #3b82f6; text-shadow: 0 0 10px rgba(59,130,246,0.4); }
+
+.action-btn {
+    background: linear-gradient(135deg, #f43f5e, #e11d48);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 15px rgba(244,63,94,0.4);
+}
+.action-btn:hover { transform: translateY(-2px); }

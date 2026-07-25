@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake | ArcadeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <header>
+        <div class="logo-container">
+            <a href="../../index.html" class="logo-text" style="text-decoration: none; color: inherit;">Arcade<span class="highlight">X</span></a>
+        </div>
+        <nav>
+            <a href="../../index.html" class="back-btn">← Back to Hub</a>
+        </nav>
+    </header>
+
+    <main class="game-container">
+        <div class="game-header">
+            <h1>Snake Room</h1>
+            <div class="speed-selector" style="margin-top:0.5rem; margin-bottom: 0.5rem; display:flex; justify-content:center; gap:0.5rem;">
+                <button id="speed-slow" class="action-btn" style="padding:0.4rem 0.8rem; font-size:0.9rem; border-radius:12px; box-shadow:none; filter: grayscale(100%); opacity:0.6;">Slow</button>
+                <button id="speed-normal" class="action-btn" style="padding:0.4rem 0.8rem; font-size:0.9rem; border-radius:12px; box-shadow:none;">Normal</button>
+                <button id="speed-fast" class="action-btn" style="padding:0.4rem 0.8rem; font-size:0.9rem; border-radius:12px; box-shadow:none; filter: grayscale(100%); opacity:0.6;">Fast</button>
+            </div>
+            <div class="scores" style="margin-top:1rem;">
+                <div class="score-box">Score: <span id="score">0</span></div>
+                <div class="score-box">High Score: <span id="high-score">0</span></div>
+            </div>
+        </div>
+
+        <div class="game-board-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div id="game-over-screen" class="overlay hidden">
+                <h2 class="game-over-text">Game Over</h2>
+                <button id="restart-btn" class="action-btn">Play Again</button>
+            </div>
+            <div id="start-screen" class="overlay">
+                <button id="start-btn" class="action-btn">Start Game</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <p>Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to move.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

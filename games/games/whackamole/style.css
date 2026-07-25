@@ -1,0 +1,35 @@
+.game-container{display:flex;flex-direction:column;align-items:center;padding-top:1rem;}
+.back-btn{background:rgba(255,255,255,0.1);color:var(--text-main);text-decoration:none;padding:0.5rem 1rem;border-radius:20px;border:1px solid var(--card-border);}
+.game-header{text-align:center;margin-bottom:1rem;}
+.whack-title{font-family:var(--font-display);font-size:3rem;background:linear-gradient(135deg,#84cc16,#bef264);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.5rem;}
+.game-board-container{position:relative;background:var(--card-bg);border:2px solid var(--card-border);border-radius:16px;padding:2rem;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+}
+.hole {
+    background: #654321;
+    border-radius: 50%;
+    box-shadow: inset 0 10px 10px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.mole {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%238B4513"/><circle cx="35" cy="40" r="5" fill="black"/><circle cx="65" cy="40" r="5" fill="black"/><ellipse cx="50" cy="60" rx="15" ry="10" fill="%23F4A460"/></svg>');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: top 0.2s;
+}
+.hole.up .mole {
+    top: 0;
+}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(10,10,15,0.85);display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:16px;z-index:10;}
+.overlay.hidden{display:none;}
+.game-over-text{font-size:3rem;color:#84cc16;margin-bottom:1rem;}
+.action-btn{background:#84cc16;color:#000;border:none;padding:0.8rem 2rem;border-radius:30px;cursor:pointer;font-weight:bold;}
