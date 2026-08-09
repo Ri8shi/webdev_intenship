@@ -9,8 +9,6 @@ A small repository for a web development internship program: exercises, starter 
 - [Prerequisites](#prerequisites)
 - [Getting started (local)](#getting-started-local)
 - [Development workflow](#development-workflow)
-- [Project structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -60,24 +58,6 @@ It's intended to be a central place for interns to clone, complete exercises, op
 - Push your branch and open a Pull Request (PR) to the `main` branch
 - Peer reviews or mentor reviews will provide feedback before merging
 
-## Project structure (example)
-
-- /starter — starter templates and example apps
-- /exercises — coding challenges and assignments
-- /notes — reading notes, resources, and links
-- /solutions — sample solutions (optional or after review)
-
-Adjust structure as new content is added.
-
-## Contributing
-
-Contributions are welcome! If you're adding an exercise, please include:
-
-- A short README describing the task and acceptance criteria
-- Any starter code and tests (if applicable)
-- A proposed solution in `/solutions` or in a separate branch/PR
-
-Follow the repository coding style and open a clear PR describing your changes.
 
 ## License
 
